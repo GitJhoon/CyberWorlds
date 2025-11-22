@@ -8,7 +8,6 @@
   "version": "1.0.0",
   "description": "Projeto com intuito de apreder a contruir um projeto de fora a fora",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "dev": "next dev"
   },
