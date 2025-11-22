@@ -9,7 +9,8 @@
   "description": "Projeto com intuito de apreder a contruir um projeto de fora a fora",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint:check": "prettier --check ."
   },
   "author": "",
   "license": "MIT",
