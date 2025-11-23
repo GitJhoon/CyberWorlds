@@ -1,4 +1,7 @@
-test("nome do teste", callbackFunction);
+const calculadora = require("../models/calculadora.js");
 
-function callbackFunction(){
-}
+test("nome do teste", () => {
+	const resultado = calculadora.somar(2, 2);
+	expect(resultado).toBe(4);
+});
+
