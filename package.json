@@ -10,7 +10,10 @@
   "description": "Projeto com intuito de apreder a contruir uma aplicação web de fora a fora",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run services:up && next dev",
+    "services:up":"sudo docker-compose -f infra/compose.yaml up -d",
+    "services:down":"sudo docker-compose -f infra/compose.yaml down",
+    "services:stop":"sudo docker-compose -f infra/compose.yaml stop",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
